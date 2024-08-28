@@ -4,7 +4,7 @@
 let direction = { x: 0, y: 0 };
 const foodSound = new Audio('foodSound.mp3');
 const gameOverSound = new Audio('gameOverSound.wav');
-const moveSound = new Audio('moveSound.mp3');
+//const moveSound = new Audio('moveSound.mp3');
 const musicSound = new Audio('move.mp3');
 let score = 2;
 let speed = 10;
@@ -110,7 +110,7 @@ if (hiscore === null) {
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e => {
     inputDir = { x: 0, y: 1 }; // Start the game
-    moveSound.play();
+    //moveSound.play();
     switch (e.key) {
         case "ArrowUp":
             console.log("ArrowUp");
